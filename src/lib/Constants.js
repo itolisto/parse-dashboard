@@ -61,7 +61,7 @@ export const DefaultColumns = {
   _Installation: [ 'installationId', 'deviceToken', 'channels', 'deviceType', 'pushType', 'GCMSenderId', 'timeZone', 'localeIdentifier', 'badge' ],
   _Role: [ 'name', 'users', 'roles' ],
   _Product: [ 'order', 'productIdentifier', 'icon', 'title', 'subtitle', 'download', 'downloadName' ],
-  _Session: [ 'restricted', 'user', 'installationId', 'sessionToken', 'expiresAt', 'createdWith' ],
+  _Session: [ 'restricted', 'user', 'installationId', 'sessionToken', 'logoutToken', 'expiresAt', 'createdWith' ],
   _PushStatus: [ 'pushTime', 'query', 'pushHash', 'payload', 'status', 'sentPerType', 'failedPerType', 'numSent', 'numFailed', 'errorMessage', 'source' ],
 };
 

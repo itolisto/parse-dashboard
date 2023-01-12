@@ -66,7 +66,7 @@ export default class BrowserRow extends Component {
           let hidden = false;
           if (name === 'password' && className === '_User') {
             hidden = true;
-          } else if (name === 'sessionToken') {
+          } else if (name === 'sessionToken' || name === 'logoutToken') {
             if (className === '_User' || className === '_Session') {
               hidden = true;
             }

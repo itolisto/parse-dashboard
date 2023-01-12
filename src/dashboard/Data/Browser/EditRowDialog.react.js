@@ -260,6 +260,7 @@ export default class EditRowDialog extends React.Component {
         (className === '_Session' &&
           [
             'sessionToken',
+            'logoutToken',
             'expiresAt',
             'user',
             'createdWith',

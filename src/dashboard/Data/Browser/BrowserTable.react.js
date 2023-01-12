@@ -280,7 +280,7 @@ export default class BrowserTable extends React.Component {
           let { name, width } = this.props.order[this.props.current.col];
           let { type, targetClass } = this.props.columns[name];
           let readonly = this.props.isUnique || READ_ONLY.indexOf(name) > -1;
-          if (name === 'sessionToken') {
+          if (name === 'sessionToken' || name === 'logoutToken') {
             if (this.props.className === '_User' || this.props.className === '_Session') {
               readonly = true;
             }

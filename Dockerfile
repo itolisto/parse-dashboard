@@ -1,7 +1,9 @@
 ############################################################
 # Build stage
 ############################################################
-FROM node:lts-alpine AS base
+FROM node:18.13-alpine AS base
+
+ENV PUPPETEER_SKIP_DOWNLOAD=true
 
 RUN apk update; \
   apk add git;
@@ -28,7 +30,7 @@ RUN npm run prepare && npm run build
 ############################################################
 # Release stage
 ############################################################
-FROM node:lts-alpine AS release
+FROM node:18.13-alpine AS release
 WORKDIR /src
 
 # Copy production node_modules
